@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "tool": "win-service-doctor",
+  "collectedAtUtc": "2026-01-10T12:00:00Z",
+  "platform": "Synthetic Windows fixture",
+  "evidence": {
+    "requestedService": "ExampleService",
+    "service": {
+      "name": "ExampleService",
+      "state": "Stopped",
+      "startMode": "Disabled",
+      "account": "LocalSystem",
+      "pid": 0,
+      "exitCode": 2,
+      "serviceSpecificExitCode": 0,
+      "executablePath": "C:\\Example\\missing.exe",
+      "executableStatus": "missing",
+      "unquotedSpacedPath": false
+    },
+    "dependencies": [
+      {
+        "name": "ExampleDependency",
+        "state": "Stopped"
+      }
+    ],
+    "events": []
+  },
+  "issues": []
+}
